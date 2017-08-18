@@ -1,0 +1,9 @@
+<h3><a ui-sref="igNew">New Post</a></h3>
+
+
+<div ng-repeat="instagram in vm.instagrams | orderBy: '-created_at'">
+  <h3>{{instagram.author}}</h3>
+  <img src="{{instagram.photo_url}}" />
+  <p>{instagram.body}}</p>
+  <p><a ui-sref="igShow({id: instagram.id})">See More</a></p>
+</div>

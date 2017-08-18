@@ -1,0 +1,9 @@
+<h3>Edit</h3>
+
+ <form>
+   <input placeholder="Author" data-ng-model="vm.instagram.author"/>
+   <input placeholder="Photo URL" data-ng-model="vm.instagram.photo_url"/>
+   <textarea placeholder="Text" data-ng-model="vm.instagram.body"></textarea>
+   <button type="button" data-ng-click="vm.update()">Edit</button>
+   <button type="button" data-ng-click="vm.destroy()">Delete</button>
+ </form>
